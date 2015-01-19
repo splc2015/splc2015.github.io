@@ -590,7 +590,7 @@ button:active {
   top: 80px;
   left: 0;
   list-style: none;
-  width: 220px;
+  width: 260px;
   padding: 0;
 
   opacity: 0;
@@ -1807,4 +1807,7 @@ section * {
           box-shadow: 0 10px 6px -6px #777;
 }
 
+.content-8 .col-sm-3 p {
+  text-align: justify;
+}
 
