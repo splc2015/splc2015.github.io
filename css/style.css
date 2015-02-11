@@ -1052,7 +1052,8 @@ section * {
 .header-10-sub .hero-unit p {
   font-size: 25px;
   font-weight: normal;
-  color: #bdc3c7;
+  /*color: #bdc3c7;*/
+  color: #e1e7eb;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 37.5px;
@@ -1068,7 +1069,7 @@ section * {
   .header-10-sub .hero-unit p {
     font-size: 22px;
     font-weight: normal;
-    color: #bdc3c7;
+    color: #e1e7eb;
     line-height: 35px;
     font-weight: 300;
   }
