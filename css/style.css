@@ -696,9 +696,21 @@ button:active {
 .header-16 .navbar-collapse.collapse {
   display: none !important;
 }
-@media (max-width: 991px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
   body .navbar-collapse {
     width: 230px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100% !important;
+    z-index: 1;
+  }
+}
+@media (max-width: 767px) {
+  body .navbar-collapse {
+    width: 188px;
     position: fixed;
     top: 0;
     right: 0;
@@ -728,6 +740,7 @@ body > .navbar-collapse {
   background: #222527;
   min-height: 100%;
 }
+
 body > .navbar-collapse::-webkit-scrollbar {
   display: none;
 }
