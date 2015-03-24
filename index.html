@@ -16,6 +16,17 @@
       <link rel="stylesheet" href="common-files/css/icon-font.css">
       <!-- end -->
       <link rel="stylesheet" href="css/style.css">
+
+      <!-- google map js -->
+      <style>
+   /*   #map-canvas {
+        width: 500px;
+        height: 400px;
+      }*/
+    </style>
+      <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script src="js/google_map_script.js"></script>
+
    </head>
    <body>
       <div class="page-wrapper">
@@ -80,16 +91,16 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="#venue">
-                           Venue
-                           </a>
-                        </li>
-                        <li>
                            <a href="#organizers">
                            Organizers
                            </a>
                         </li>
-                        <!--<li><a href="#hotels">Hotels</a></li>-->
+                        <li>
+                           <a href="#venue">
+                           Venue
+                           </a>
+                        </li>                        
+                        <li><a href="#hotels">Hotels</a></li>
                         <!--<li><a href="#workshops">Workshops</a></li>
                            <li><a href="#">Sponsors</a></li>-->
                      </ul>
@@ -557,8 +568,42 @@
                   </div>
                </div>
             </div>
+            <br/>
+            <hr>
+            <br/>
+            <div class="container" id="hotels">
+               <h3>
+                  Hotel Reservation
+               </h3>
+               <div class="row">
+                  <div class="col-sm-6 col-sm-offset-3">
+                     <p>
+                        Make your hotel reservations for SPLC 2015 NOW! The following hotels are taking reservations for SPLC 2015 at discounted room rates!
+                     </p>
+                  </div>
+               </div>
+               <div id="map-canvas"></div>
+               <br/>
+               <div class="row">
+                  <div class="col-sm-6 col-sm-offset-3">
+                     <p>
+                        1. <a href="http://home2suites.hilton.com/en/ht/groups/personalized/B/BNAHTHT-SPL-20150719/index.jhtml?WT.mc_id=POG">Home2 Suites by Hilton Nashville Vanderbilt</a>
+                     </p>
+                     <p>
+                        2. <a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/B/BNANVGI-SPL-20150719/index.jhtml?WT.mc_id=POG">Hilton Garden Inn Nashville Vanderbilt</a>
+                     </p>
+                     <p>
+                        3. <a href="http://cwp.marriott.com/bnawe/spl/">Courtyard Nashville Vanderbilt/West End</a>
+                     </p>
+                     <p>
+                        4. <a href="http://homewoodsuites.hilton.com/en/hw/groups/personalized/B/BNAVBHW-SPL-20150719/index.jhtml?WT.mc_id=POG">Homewood Suites by Hilton Nashville Vanderbilt</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
          </div>
       </section>
+      
       <!-- content-11 -->
       <section class="content-11">
          <div class="container">
@@ -608,5 +653,6 @@
       <script src="common-files/js/startup-kit.js"></script>
       <script src="js/jquery.backgroundvideo.min.js"></script>
       <script src="js/script.js"></script>
+      
    </body>
 </html>
