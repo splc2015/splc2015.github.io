@@ -16,17 +16,12 @@
       <link rel="stylesheet" href="common-files/css/icon-font.css">
       <!-- end -->
       <link rel="stylesheet" href="css/style.css">
-
-      <!-- google map js -->
+      <!-- fix the Google Map CSS issue caused by Bootstrap -->
       <style>
-   /*   #map-canvas {
-        width: 500px;
-        height: 400px;
-      }*/
-    </style>
+         .gmnoprint img { max-width: none; }
+      </style>
       <script src="https://maps.googleapis.com/maps/api/js"></script>
       <script src="js/google_map_script.js"></script>
-
    </head>
    <body>
       <div class="page-wrapper">
@@ -34,12 +29,22 @@
          <header class="header-10">
             <div class="container">
                <div class="navbar col-sm-12" role="navigation">
-                  <div class="navbar-header">
-                     <button type="button" class="navbar-toggle">
-                     </button>
+                  <div class="navbar-header pull-left"  >
+                     <!-- <button type="button" class="navbar-toggle">
+                     </button> -->
                      <a class="brand" href="#">
                      SPLC 2015
                      </a>
+                  </div>
+                  <!-- <div class="navbar-collapse pull-right">
+                     <form class="navbar-form pull-left">
+                        <a class="btn btn-info" href="https://www.eventbrite.com/e/splc-2015-registration-15309242356">Register</a>
+                     </form>
+                  </div> -->
+                  <div class="navbar-header pull-right">
+                     <form class="navbar-form pull-left">
+                        <a class="btn btn-info" href="#">Register</a>
+                     </form>
                   </div>
                   <div class="collapse navbar-collapse pull-right">
                      <ul class="nav pull-left">
@@ -99,14 +104,15 @@
                            <a href="#venue">
                            Venue
                            </a>
-                        </li>                        
-                        <li><a href="#hotels">Hotels</a></li>
+                        </li>
+                        <li><a href="#hotels">Hotels</a>
+                        </li>
                         <!--<li><a href="#workshops">Workshops</a></li>
                            <li><a href="#">Sponsors</a></li>-->
                      </ul>
-                     <form class="navbar-form pull-left">
-                        <!--<a class="btn btn-info" href="#">Register</a>-->
-                     </form>
+                     <!-- <form class="navbar-form pull-left">
+                        <a class="btn btn-info" href="#">Register</a>
+                     </form> -->
                   </div>
                </div>
             </div>
@@ -196,7 +202,7 @@
             <a class="control-btn fui-arrow-down" href="#">
             </a>
          </section>
-         <!-- content-8 -->
+         <!-- <!-- content-8 -->
          <section class="content-8 v-center" id="calls">
             <div>
                <div class="container">
@@ -205,7 +211,7 @@
                      <br/>
                      <!-- <div style="width: 75%; margin: 40px auto 0;">
                         <img src="img/diagram.jpg" alt="">
-                     </div> -->
+                        </div> -->
                      <br/>
                      General technical tracks
                   </h3>
@@ -352,7 +358,7 @@
                </div>
             </div>
       </div>
-      </section>
+      </section> -->
       <!-- content-23 -->
       <section class="content-23  v-center bg-midnight-blue">
          <div>
@@ -573,7 +579,7 @@
             <br/>
             <div class="container" id="hotels">
                <h3>
-                  Hotel Reservation
+                  Hotel Rooms
                </h3>
                <div class="row">
                   <div class="col-sm-6 col-sm-offset-3">
@@ -584,8 +590,8 @@
                </div>
                <div id="map-canvas"></div>
                <br/>
-               <div class="row">
-                  <div class="col-sm-6 col-sm-offset-3">
+               <div class="row v-center">
+                  <div class="col-sm-7 col-sm-offset-2">
                      <p>
                         1. <a href="http://home2suites.hilton.com/en/ht/groups/personalized/B/BNAHTHT-SPL-20150719/index.jhtml?WT.mc_id=POG">Home2 Suites by Hilton Nashville Vanderbilt</a>
                      </p>
@@ -593,17 +599,22 @@
                         2. <a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/B/BNANVGI-SPL-20150719/index.jhtml?WT.mc_id=POG">Hilton Garden Inn Nashville Vanderbilt</a>
                      </p>
                      <p>
-                        3. <a href="http://cwp.marriott.com/bnawe/spl/">Courtyard Nashville Vanderbilt/West End</a>
+                        3. <a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=SPLC%20Room%20Block%5Ebnavb%60SPLSPLA%60179.00%60USD%60false%60;bnavw%60SPLSPLA%60179.00%60USD%60false%607/26/15%607/31/15%607/5/15&app=resvlink&stop_mobi=yes">SpringHill Suites Nashville Vanderbilt/West End</a>
                      </p>
                      <p>
-                        4. <a href="http://homewoodsuites.hilton.com/en/hw/groups/personalized/B/BNAVBHW-SPL-20150719/index.jhtml?WT.mc_id=POG">Homewood Suites by Hilton Nashville Vanderbilt</a>
+                        4. <a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=SPLC%20Room%20Block%5Ebnavb%60SPLSPLA%60179.00%60USD%60false%60;bnavw%60SPLSPLA%60179.00%60USD%60false%607/26/15%607/31/15%607/5/15&app=resvlink&stop_mobi=yes">Residence Inn Nashville Vanderbilt/West End</a>
+                     </p>
+                     <p>
+                        5. <a href="http://cwp.marriott.com/bnawe/spl/">Courtyard Nashville Vanderbilt/West End</a>
+                     </p>
+                     <p>
+                        6. <a href="http://homewoodsuites.hilton.com/en/hw/groups/personalized/B/BNAVBHW-SPL-20150719/index.jhtml?WT.mc_id=POG">Homewood Suites by Hilton Nashville Vanderbilt</a>
                      </p>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      
       <!-- content-11 -->
       <section class="content-11">
          <div class="container">
@@ -653,6 +664,5 @@
       <script src="common-files/js/startup-kit.js"></script>
       <script src="js/jquery.backgroundvideo.min.js"></script>
       <script src="js/script.js"></script>
-      
    </body>
 </html>
