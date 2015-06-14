@@ -1868,24 +1868,26 @@ text-align: left;
   background-color: #3498db;
   color: white;
 }
-
 .table-container table tr td:nth-child(1){
-width: 12%;
+width: 10%;
 }
 .table-container table tr td:nth-child(2){
-width: 22%;
+width: 18%;
 }
 .table-container table tr td:nth-child(3){
-width: 22%;
+width: 18%;
 }
 .table-container table tr td:nth-child(4){
-width: 22%;
+width: 18%;
 }
 .table-container table tr td:nth-child(5){
-width: 22%;
+width: 18%;
+}
+.table-container table tr td:nth-child(6){
+width: 18%;
 }
 .table-container table tr td p {
-  font-size: 85%;
+  font-size: 70%;
 }
 
 .table-container table tr td {
